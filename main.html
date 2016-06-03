@@ -1,0 +1,6 @@
+<h1>Movie App via Angular - Main Page</h1>
+<!-- <img src='http://image.tmdb.org/t/p/w500/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg?api_key=fec8b5ab27b292a68294261bb21b04a5'> -->
+
+<div ng-repeat='movieInfo in data.results' style='float: left; padding: 1em;'>
+     <a href='{{"#" + movieInfo.id}}'><img src="{{'http://image.tmdb.org/t/p/w500' + movieInfo.poster_path + '?api_key=fec8b5ab27b292a68294261bb21b04a5'}}"></a>
+</div>

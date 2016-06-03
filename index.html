@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+     <title>Movie App via Angular</title>
+
+     <style>
+     body {
+          font-family: Verdana;
+          box-sizing: border-box;
+     }
+     .center {
+          text-align: center;
+     }
+     #poster {
+          position: absolute;
+          top: 10%;
+          left: 0%;
+          width: 30%;
+     }
+     #plot {
+          position: absolute;
+          top: 10%;
+          left: 35%;
+          width: 25%;
+     }
+     img {
+          width: 100%;
+     }
+     </style>
+
+     <script src="angular.js"></script>
+     <script src="angular-route.js"></script>
+     <script src="movie-app.js"></script>
+
+</head>
+<body ng-app = 'myAppModule'>
+     <ng-view></ng-view>
+</body>
+</html>
